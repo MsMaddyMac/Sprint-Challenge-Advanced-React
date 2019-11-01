@@ -11,7 +11,7 @@ const Navbar = () => {
   };
   return (
     <nav className="navbar">
-      <div className="dark-mode__toggle">
+      <div data-testid="custom-toggle" className="dark-mode__toggle">
         <div
           onClick={toggleMode}
           className={darkMode ? 'toggle toggled' : 'toggle'}
