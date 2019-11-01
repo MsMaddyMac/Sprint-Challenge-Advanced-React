@@ -1,8 +1,17 @@
+/* 
+html, body, * {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+} */
+
+
+
 .App {
   text-align: center;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
   max-width: 100%;
 }
 
@@ -15,6 +24,12 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.header h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  color: #7c0f00;
 }
 
 .navbar {
@@ -55,7 +70,7 @@
 }
 
 .dark-mode {
-  color: #fff;
+  color: blue;
   background-color: #070731;
 
 }
@@ -63,4 +78,22 @@
 .dark-mode .navbar {
   background-color: #1F2022;
     border: none;
+}
+
+.cards-display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.player-card {
+  margin-top: 50px;
+  box-shadow: 0 1px 6px -2px #000;
+  background: #fced3be6;
+  margin-bottom: 30px;
+  padding: 10px;
 }
