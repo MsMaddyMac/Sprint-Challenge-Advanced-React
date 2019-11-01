@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import Players from './components/Players';
+import Navbar from './components/Navbar';
 import Trophy from '../src/images/worldcuptrophy.png';
 import './App.css';
 
@@ -31,6 +32,7 @@ class App extends Component {
       return (
         <div className="App">
           <div className="header">
+            <Navbar />
             <h2>Women's World Cup</h2>
             <img src={Trophy} alt="Women's 2019 World Cup Trophy" />
           </div>
